@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    /* border: 1px solid black; */
+    
+}
+
+.xxx{
+    /* background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(235,207,207,1) 50%, rgba(252,252,252,1) 100%); */
+    /* background: linear-gradient(270deg, rgba(235,226,226,1) 50%, rgba(235,226,226,1) 50%); */
+    background: linear-gradient(270deg, rgba(235,226,226,1) 50%, rgba(245,218,218,1) 100%);
+
+
+
+}
+
+.aboutbanner{
+    background-image: url(./Assests/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offerbanner {
+    background-image: url(./Assests/Offer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner1{
+    background-image: url(./Assests/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsLetter {
+    background-image: url(./Assests/b14.png);
+    background-position: 20% 30% ;
+    background-repeat: no-repeat;
+    background-color: #041e42;
+
+}
+
+.footer {
+    background-image: url(./Assests//b14.png);
+    background-position: 20%;
+    background-color: #041e42;
+}
