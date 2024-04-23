@@ -33,16 +33,19 @@ const About = () => {
         </div>
 
 
-      <div className="flex px-28">
-        <div className=" w-[50%]">
-          <img className="pt-20" src={Aboutimg} alt="" />
+      <div className="grid grid-cols-2 max-lg:grid-cols-1 space-x-5 max-lg:space-x-0 max-lg:space-y-5 p-6">
+        <div className="">
+          <img className="" src={Aboutimg} alt="" />
         </div>
-        <div className="w-[50%] flex justify-center items-center p-32 my-24 text-xl bg-gray-100 rounded-[20%]">
-          <p className=" ">
+        <div className="flex flex-wrap text-center justify-center items-center text-xl max-lg:text-lg  ">
+          <p className=" bg-gray-100 p-20 max-sm:p-12 rounded-3xl ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a
             asperiores corporis fuga repudiandae earum reprehenderit tempore
             necessitatibus maxime sed nam aliquam vitae adipisci delectus
-            quibusdam consequuntur praesentium, qui aspernatur saepe assumenda
+            quibusdam consequuntur praesentium.
+              <br /> 
+              <br />
+            qui aspernatur saepe assumenda
             commodi autem sequi sapiente iste? Quam ipsa recusandae itaque
             aspernatur, rerum suscipit reiciendis aut officia veniam, cum et?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi,
@@ -69,8 +72,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="text-center  text-[40px] font-semibold my-14  ">
-        <p className="bg-gray-300 ml-80 mr-80 rounded-3xl">Our Team</p>
+      <div className="text-center text-[40px]  max-lg:mb-6 max-lg:mt-3 font-semibold my-14 max-lg:text-3xl max-md:text-2xl ">
+        <p className="bg-gray-300 inline-block px-10 py-2 rounded-3xl">Our Team</p>
       </div>
 
       <div className="flex justify-center items-center ">
@@ -78,7 +81,7 @@ const About = () => {
       </div>
         <Stores/>
 
-      <div className="grid grid-cols-6 place-items-center pt-10 max-lg:grid-cols-3 max-md:grid-cols-2 max-[500px]:grid-cols-1 max-lg:space-y-5">
+      <div className="grid grid-cols-6 place-items-center max-lg:grid-cols-3 max-md:grid-cols-2 max-[500px]:grid-cols-1 max-lg:space-y-5">
         <img
           className="hover:shadow-2xl hover:scale-105 transition-all duration-300 border max-lg:mt-5   w-56"
           src={a1}

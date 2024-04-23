@@ -115,14 +115,14 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid  place-items-center">
+        <div className="flex flex-col place-items-center">
           <h1 className="text-2xl hover:scale-105 transition-all duration-500 cursor-pointer max-[1315px]:w-[80%] max-[1315px]:text-center max-[970px]:mt-10 max-[970px]:text-center">
             Install Our App 
           </h1>
-           <p>From App Store or Google Play Store</p>
-           <div className="flex">
-            <img className="w-40" src={appstore} alt="" />
-            <img className="w-40" src={playstore} alt="" />
+           <p>From App Store or Play Store</p>
+           <div className="flex flex-wrap -space-x-5">
+            <img className="w-40 max-xl:w-32" src={appstore} alt="" />
+            <img className="w-40 max-xl:w-32" src={playstore} alt="" />
            </div>
            <p>Secured Payment Gateways</p>
 

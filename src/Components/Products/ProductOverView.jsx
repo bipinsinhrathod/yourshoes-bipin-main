@@ -123,7 +123,7 @@ const ProductOverView = () => {
   ) : (
     <>
       <Navbar />
-      <section className="grid grid-cols-2 items-center max-lg:grid-cols-1">
+      <section className="grid grid-cols-2 items-center max-lg:grid-cols-1 max-lg:mb-5">
         <div className="flex justify-end w-4/6 h-[90%] rounded-2xl overflow-hidden  mx-auto max-xl:w-[90%] max-lg:w-[80%]">
           {/* <img  className='w-full object-cover rounded-xl'src={imgUrl} alt="" /> */}
           <ProductsDetailsSlider images={product?.sliderImages} />
