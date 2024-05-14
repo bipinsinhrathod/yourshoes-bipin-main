@@ -19,10 +19,12 @@ import {
   WomenAllProducts,
   KidsAllProducts,
   newArrival,
-  // AllProduct,
 } from "../Data/AllData";
 import ProductsDetailsSlider from "./ProductsDetailsSlider";
 import { addToCart } from "../../utils";
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css"
 
 const ProductOverView = () => {
   const { id } = useParams();
@@ -101,28 +103,22 @@ const ProductOverView = () => {
         setProduct(forNewArr);
         setSection("New");
         break;
-      // case "allproduct":
-      //   const forAllProduct = AllProduct?.find((item) => item.id === parseInt(id));
-      //   setProduct(forAllProduct);
-      //   // setSection("New");
-      //   break;
       default:
         setProduct({});
     }
   }, []);
 
-  
 
-  // const products = gender === 'men' ? ManAllProducts : RecommendForWomen;
-  // const product = ManAllProducts.find((item) =>item.id === parseInt(id));
-
-  // Check if product exists before attempting to destructure its properties
+  const notify = () =>{
+    toast("item added to the cart !")
+  }
 
   return !product ? (
     <div>No product found</div>
   ) : (
     <>
       <Navbar />
+      <ToastContainer closeOnClick/>
       <section className="grid grid-cols-2 items-center max-lg:grid-cols-1 max-lg:mb-5">
         <div className="flex justify-end w-4/6 h-[90%] rounded-2xl overflow-hidden  mx-auto max-xl:w-[90%] max-lg:w-[80%]">
           {/* <img  className='w-full object-cover rounded-xl'src={imgUrl} alt="" /> */}
@@ -195,7 +191,7 @@ const ProductOverView = () => {
           <div className="space-y-3 max-sm:grid">
             <span></span>
             {/* <Link to={`/cart/${product?.id}?type=allproduct`}> */}
-              <button onClick={() => addToCart(product?.id,product)} className="border-2 border-black font-bold w-44 h-11 rounded-xl pt-1 max-sm:w-full ">
+            <button onClick={() => {addToCart(product?.id,product);notify()}} className="border-2 border-black font-bold w-44 h-11 rounded-xl pt-1 max-sm:w-full ">
                 <ShoppingCartOutlined className="mb-1 scale-90" /> Add to cart
               </button>
             {/* </Link> */}

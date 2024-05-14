@@ -1,28 +1,3 @@
-// export const addToCart = (id, allproduct) => {
-//   const localCartData = localStorage.getItem("cart-data");
-
-//   if (localCartData) {
-//     const cartdata = JSON.parse(localCartData);
-
-//     const newData = cartdata?.map((value, index) => {
-//       if (id == value?.id) {
-//         const updatedQty = value?.qty ? value?.qty + 1 : 1;
-//         value.qty = updatedQty;
-//         return value;
-//       } else {
-//         allproduct.qty = 1;
-//         return allproduct;
-//       }
-//     });
-//     localStorage.setItem("cart-data", JSON.stringify(newData));
-//   } else {
-//     allproduct.qty = 1;
-//     localStorage.setItem("cart-data", JSON.stringify([allproduct]));
-//   }
-//   // const newCartData = [product]
-//   // localStorage.setItem("cart-data",JSON.stringify(newCartData))
-// };
-
 export const addToCart = (id, allproduct) => {
   const localCartData = localStorage.getItem("cart-data");
 
